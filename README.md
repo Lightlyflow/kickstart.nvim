@@ -158,6 +158,18 @@ After installing all the dependencies continue with the [Install Kickstart](#Ins
 
 #### Windows Installation
 
+<details><summary>Windows with gcc/make using Scoop</summary>
+
+```powershell
+# Download Scoop
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+
+# Download dependencies
+scoop install neovim git ripgrep wget fd unzip gzip mingw make
+```
+</details>
+
 <details><summary>Windows with Microsoft C++ Build Tools and CMake</summary>
 Installation may require installing build tools and updating the run command for `telescope-fzf-native`
 
